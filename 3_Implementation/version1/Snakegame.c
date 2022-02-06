@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "conio.h"
+#include <conio.h>
 #include <stdlib.h>
 #include <unistd.h>
-int i, j, height = 40, width = 40;
+int i, j, height = 40, width = 40;cd
 int gameover, score;
 int x, y, foodx, foody, flag;
 void gamesetup()
