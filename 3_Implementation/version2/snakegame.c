@@ -8,18 +8,14 @@
  * @copyright Copyright (c) 2022
  * 
  */
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-int i, j, height = 20, width = 20;
-int gameover, score;
-int x, y, foodx, foody, flag;
 /**
  * @brief game setup functions will set the boundaries for the snake to move.
  * 
  */
+#include"snakegame.h"
 void gamesetup()
 {
+	int height = 20, width = 20;
 	gameover = 0;
 	x = height / 2;
 	y = width / 2;
@@ -35,13 +31,13 @@ while(1){
 }
 score=0;		
 }
-
 /**
  * @brief design function will design the snake and food for food.
  * 
  */
 void design()
 {
+	int height = 20, width = 20;
 	//regex expression is used to clear the output screen.
 	 printf("\e[1;1H\e[2J");
 	for (i = 0; i < height; i++) {
@@ -76,6 +72,7 @@ void design()
  */
 void userinput()
 {
+	int height = 20, width = 20;
 	// getchar() function will help you to get user input at runtime.
 		switch (getchar()) {
 		case 'a':
@@ -101,6 +98,7 @@ void userinput()
  */
 void mover()
 {
+	int height = 20, width = 20;
 	switch (flag) {
 	case 1:
 		y--;
@@ -133,31 +131,4 @@ void mover()
 }
 		score += 20;
 	}
-}
-/**
- * @brief Main function includes all the functions to design the game.
- * 
- */
-void main()
-{
-	int m, n;
-	gamesetup();
-	while (!gameover) {
-		design();
-		userinput();
-		mover();
-	}
-	/**
-	 * @brief using score you will judge the player level.
-	 * 
-	 */
-	if(score>=0 && score<100){
-		printf("\nYou need to paly better\n");
-	}
-	else if(score>=100 && score<300){
-		printf("\nYou are pro\n");
-	}
-	else{
-		printf("\nYou are Legend\n");
-}
 }

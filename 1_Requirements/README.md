@@ -11,8 +11,8 @@ This Snake game is designed for entertainment. This is a basic snake game with n
 * The snake wouldn't hit the boundaries.
 ---
 ### **Research Articles** :
-[https://www.geeksforgeeks.org/snake-game-in-c/eeksforGeeks](https://www.geeksforgeeks.org/snake-game-in-c/ "GeekforGeeks")
-[https://itsourcecode.com/free-projects/c-projects/snake-game-in-c-programming-with-source-code/](https://itsourcecode.com/free-projects/c-projects/snake-game-in-c-programming-with-source-code/ "Itsourcecode")
+* [https://www.geeksforgeeks.org/snake-game-in-c/eeksforGeeks](https://www.geeksforgeeks.org/snake-game-in-c/ "GeekforGeeks")
+* [https://itsourcecode.com/free-projects/c-projects/snake-game-in-c-programming-with-source-code/](https://itsourcecode.com/free-projects/c-projects/snake-game-in-c-programming-with-source-code/ "Itsourcecode")
 
 ---
 ## **HIGH LEVEL REQUIREMENTS**
